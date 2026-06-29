@@ -10,9 +10,21 @@ class ShopPage extends StatefulWidget {
 class _ShopPageState extends State<ShopPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body:Center(child: Text("ShopPage"))
-    );
+    return Scaffold(body: Column(
+      children: [
+ Container(
+  decoration: BoxDecoration(
+    color:Colors.white,
+    borderRadius: BorderRadius.circular(10)
+  ),
+  child:Row(
+    children: [
+   Text("Search"),
+   Icon(Icons.search)
+    ],
+  )
+ )
+        ],
+      ));
   }
 }
-
