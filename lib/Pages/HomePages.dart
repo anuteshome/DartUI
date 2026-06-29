@@ -31,6 +31,11 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavBar(
         onTabChange: (index) => TabChange(index),
       ),
+      appBar: AppBar(
+        leading:IconButton(icon: Icon(Icons.menu),color: Colors.black,
+        onPressed: () => {},),
+        backgroundColor: Colors.transparent,
+      ),
       body:_pages[_selectedIndex]
     );
   }
