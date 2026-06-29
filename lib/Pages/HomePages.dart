@@ -43,28 +43,32 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.transparent,
       ),
       drawer: Drawer(
-        backgroundColor: Colors.grey[700],
-       child:Column(
-        children: [
-         DrawerHeader(
-          decoration: const BoxDecoration(),
-         child: Image.asset('lib/assets/NikeLogo.png')
-         ),
-        Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: ListTile(
-            leading: Icon(Icons.home,color:Colors.white),
-            title:Text('H O M E',style: TextStyle(color:Colors.white))
+        backgroundColor: Colors.grey[900],
+       child:Center(
+         child: Column(
+          children: [
+          Padding(
+            padding: const EdgeInsets.only(top:80),
+            child: Container(
+             child: Image.asset('lib/assets/NikeLogo.png',color: Colors.white,)
+             ),
           ),
-        ),
-         Padding(
-           padding: const EdgeInsets.all(15.0),
-           child: ListTile(
-            leading: Icon(Icons.info,color:Colors.white),
-            title:Text('A B O U T',style: TextStyle(color:Colors.white),)
-                   ),
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: ListTile(
+              leading: Icon(Icons.home,color:Colors.white),
+              title:Text('Home',style: TextStyle(color:Colors.white))
+            ),
+          ),
+           Padding(
+             padding: const EdgeInsets.all(15.0),
+             child: ListTile(
+              leading: Icon(Icons.info,color:Colors.white),
+              title:Text('About',style: TextStyle(color:Colors.white),)
+                     ),
+           ),
+          ],
          ),
-        ],
        )
       ),
       body:_pages[_selectedIndex]
