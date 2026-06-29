@@ -32,9 +32,40 @@ class _HomePageState extends State<HomePage> {
         onTabChange: (index) => TabChange(index),
       ),
       appBar: AppBar(
-        leading:IconButton(icon: Icon(Icons.menu),color: Colors.black,
-        onPressed: () => {},),
+        leading:Builder(
+          builder: (context) {
+            return IconButton(icon: Icon(Icons.menu),color: Colors.black,
+            onPressed: () => {
+              Scaffold.of(context).openDrawer(),
+            },);
+          }
+        ),
         backgroundColor: Colors.transparent,
+      ),
+      drawer: Drawer(
+        backgroundColor: Colors.grey[700],
+       child:Column(
+        children: [
+         DrawerHeader(
+          decoration: const BoxDecoration(),
+         child: Image.asset('lib/assets/NikeLogo.png')
+         ),
+        Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: ListTile(
+            leading: Icon(Icons.home,color:Colors.white),
+            title:Text('H O M E',style: TextStyle(color:Colors.white))
+          ),
+        ),
+         Padding(
+           padding: const EdgeInsets.all(15.0),
+           child: ListTile(
+            leading: Icon(Icons.info,color:Colors.white),
+            title:Text('A B O U T',style: TextStyle(color:Colors.white),)
+                   ),
+         ),
+        ],
+       )
       ),
       body:_pages[_selectedIndex]
     );
