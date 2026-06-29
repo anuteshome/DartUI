@@ -1,4 +1,5 @@
 import 'package:dartui/Pages/HomePages.dart';
+import 'package:dartui/Pages/introPages.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:false,
-      home: HomePage(),
+      home: IntroPage(),
     );
   }
 }
