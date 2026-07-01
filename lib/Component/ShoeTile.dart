@@ -21,9 +21,37 @@ class ShoeTile extends StatelessWidget {
         children: [
           Image.asset(shoe.ImagePath,height: 200,width: 200,),
           // Disciprion
-          Text(shoe.name),
-         Text(shoe.Price.toString()),
-         Text(shoe.Discription),
+   Text(shoe.Discription),
+SizedBox(height:95),
+    Row(
+      mainAxisAlignment:MainAxisAlignment.spaceBetween,
+      children: [
+
+      Padding(
+        padding: const EdgeInsets.only(left: 25),
+        child: Column(
+          mainAxisAlignment:MainAxisAlignment.start,
+          children: [
+            Text(shoe.name,style:TextStyle(fontSize:20,fontWeight:FontWeight.bold)),
+            Text('\$'+shoe.Price.toString(),style:TextStyle(fontSize:15,color:Colors.grey[500])),
+          ],
+        ),
+      ),
+
+      Container(
+        width:60,
+        height:60,
+        decoration: BoxDecoration(
+          color:Colors.black,
+          borderRadius:BorderRadius.only(bottomRight:Radius.circular(12),topLeft:Radius.circular(12))
+        ),
+        child: Icon(Icons.add,color:Colors.white))
+      ],
+    ),
+         
+             
+
+        
         ],
       )
     );

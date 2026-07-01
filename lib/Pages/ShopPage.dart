@@ -59,7 +59,7 @@ class _ShopPageState extends State<ShopPage> {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 Shoe shoe = Shoe(
-                  name: "Abebe",
+                  name: "Nike Air Max",
                   Price: "230",
                   ImagePath: "lib/assets/shoes3.png",
                   Discription: "this is disc",
