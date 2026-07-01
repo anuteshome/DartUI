@@ -9,16 +9,21 @@ class ShoeTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // width: 280,
+      width: 350,
       height: 300,
+      margin:  EdgeInsets.all(15),
       decoration: BoxDecoration(
-        color:Colors.grey[100],
+        color:Color.fromARGB(255, 255, 255, 255),
         borderRadius: BorderRadius.circular(12)
+        
       ),
       child:Column(
         children: [
-          Image.asset("lib/assets/shoes2.png",height: 200,),
-
+          Image.asset(shoe.ImagePath,height: 200,width: 200,),
+          // Disciprion
+          Text(shoe.name),
+         Text(shoe.Price.toString()),
+         Text(shoe.Discription),
         ],
       )
     );
