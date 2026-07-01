@@ -21,8 +21,9 @@ class ShoeTile extends StatelessWidget {
         children: [
           Image.asset(shoe.ImagePath,height: 200,width: 200,),
           // Disciprion
+          SizedBox(height:25),
    Text(shoe.Discription),
-SizedBox(height:95),
+SizedBox(height:70),
     Row(
       mainAxisAlignment:MainAxisAlignment.spaceBetween,
       children: [
