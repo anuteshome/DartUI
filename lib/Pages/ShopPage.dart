@@ -53,7 +53,7 @@ class _ShopPageState extends State<ShopPage> {
             ),
           ),
           Expanded(
-    
+  
             child: ListView.builder(
               itemCount: 4,
               scrollDirection: Axis.horizontal,
@@ -61,7 +61,7 @@ class _ShopPageState extends State<ShopPage> {
                 Shoe shoe = Shoe(
                   name: "Abebe",
                   Price: "230",
-                  ImagePath: "lib/assets/shoes2.png",
+                  ImagePath: "lib/assets/shoes3.png",
                   Discription: "this is disc",
                 );
                 return ShoeTile(shoe: shoe);
