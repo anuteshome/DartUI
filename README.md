@@ -66,7 +66,7 @@ Provider manages:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/anuteshome/DartUI.git
 ```
 
 ### Navigate to the project
@@ -126,7 +126,7 @@ During this project I practiced:
 
 **Ananya Teshome**
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/anuteshome
 
 ---
  If you like this project, don't forget to give it a star!
