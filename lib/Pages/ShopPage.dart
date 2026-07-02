@@ -7,17 +7,18 @@ import "package:provider/provider.dart";
 class ShopPage extends StatefulWidget {
   const ShopPage({super.key});
 
-
   @override
   State<ShopPage> createState() => _ShopPageState();
 }
 
 class _ShopPageState extends State<ShopPage> {
-
-void addToCartBtn(Shoe shoe) {
+  void addToCartBtn(Shoe shoe) {
     Provider.of<Cart>(context, listen: false).AddShoe(shoe);
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(title: Text("Added to Cart")),
+    );
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -66,9 +67,7 @@ void addToCartBtn(Shoe shoe) {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 Shoe shoe = value.getShopShoe()[index];
-                return ShoeTile(
-                  onTap:() => addToCartBtn(shoe),
-                  shoe: shoe);
+                return ShoeTile(onTap: () => addToCartBtn(shoe), shoe: shoe);
               },
             ),
           ),
