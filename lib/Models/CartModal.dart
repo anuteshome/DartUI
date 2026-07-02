@@ -8,28 +8,28 @@ class Cart extends ChangeNotifier {
       Price: "120",
       Discription:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      ImagePath: "lib/Assets/Images/shoes3.png",
+      ImagePath: "lib/assets/shoes3.png",
     ),
     Shoe(
       name: "Waking Shoe",
       Price: "150",
       Discription:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      ImagePath: "lib/Assets/Images/shors4.png",
+      ImagePath: "lib/assets/shors4.png",
     ),
     Shoe(
       name: "Sport Shoe",
       Price: "300",
       Discription:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      ImagePath: "lib/Assets/Images/shoes5.png",
+      ImagePath: "lib/assets/shoes5.png",
     ),
     Shoe(
       name: "Coding Shoe",
       Price: "100",
       Discription:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      ImagePath: "lib/Assets/Images/shoes2.png",
+      ImagePath: "lib/assets/shoes2.png",
     ),
   ];
   List<Shoe> UserCart = [];
