@@ -1,4 +1,6 @@
 import "package:flutter/material.dart";
+import "package:dartui/Models/CartModal.dart";
+import "package:provider/provider.dart";
 
 class CartPage extends StatefulWidget {
   const CartPage({super.key});
@@ -10,10 +12,15 @@ class CartPage extends StatefulWidget {
 class _CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.grey[200],
-      body:Center(child: Text("Cart Pages"))
+    return Consumer<Cart>(
+      builder: (context, value, child) => Column(
+        children: 
+      [Text("Cart Page")
+      
+      
+      ]
+      
+      ),
     );
   }
 }
-
