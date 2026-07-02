@@ -1,6 +1,8 @@
 import "package:dartui/Component/ShoeTile.dart";
 import "package:dartui/Models/ShoesModel.dart";
 import "package:flutter/material.dart";
+import "package:dartui/Models/CartModal.dart";
+import "package:provider/provider.dart";
 
 class ShopPage extends StatefulWidget {
   const ShopPage({super.key});
@@ -12,9 +14,8 @@ class ShopPage extends StatefulWidget {
 class _ShopPageState extends State<ShopPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[200],
-      body: Column(
+    return Consumer<Cart>(
+      builder: (context, value, child) => Column(
         children: [
           Padding(
             padding: const EdgeInsets.all(25.0),
@@ -53,7 +54,6 @@ class _ShopPageState extends State<ShopPage> {
             ),
           ),
           Expanded(
-  
             child: ListView.builder(
               itemCount: 4,
               scrollDirection: Axis.horizontal,
