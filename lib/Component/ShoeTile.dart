@@ -3,10 +3,11 @@ import "package:flutter/material.dart";
 
 class ShoeTile extends StatelessWidget {
   Shoe shoe;
-  ShoeTile({super.key, required this.shoe});
-  void addToCartbtn(Shoe shoe) {
-    print("shoe added to cart");
-  }
+  void Function()? onTap;
+  ShoeTile({super.key, required this.shoe, required this.onTap, });
+  // void addToCartbtn() {
+  //   print("shoe added to cart");
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +50,7 @@ class ShoeTile extends StatelessWidget {
               ),
 
               GestureDetector(
-                onTap: addToCartbtn,
+                onTap: onTap,
                 child: Container(
                   width: 60,
                   height: 60,
