@@ -66,6 +66,9 @@ flutter:
     - lib/assets/shors4.png
     - lib/assets/shoes5.png
     - lib/assets/NikeLogo.png
+    - lib/assets/shop.jpg
+    - lib/assets/Cart.jpg
+    - lib/assets/Intro.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

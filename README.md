@@ -1,18 +1,132 @@
-# dartui.
+# 👟 Nike Shop UI (Flutter)
 
-A new Flutter project.
+A modern Nike shopping application built with Flutter. This project demonstrates Flutter UI development, state management using Provider, and a clean application structure.
 
-## Getting Started
+##  Features
 
-This project is a starting point for a Flutter application.
+- Beautiful Nike-inspired UI
+- Intro / Welcome Screen
+- Home Page
+- Shop Page
+- Shopping Cart
+- Horizontal product list
+- Add items to cart
+- Remove items from cart
+- State management with Provider
+- Responsive layout
+- Material Design UI
 
-A few resources to get you started if this is your first Flutter project:
+##  Built With
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- Dart
+- Provider
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# DartUI
+## Project Structure
+
+```
+lib/
+│
+├── Components/
+│   ├── ShoeTile.dart
+│   ├── CartItem.dart
+│   └── Drawer.dart
+│
+├── Models/
+│   ├── ShoesModel.dart
+│   └── CartModel.dart
+│
+├── Pages/
+│   ├── IntroPage.dart
+│   ├── HomePage.dart
+│   ├── ShopPage.dart
+│   └── CartPage.dart
+│
+└── main.dart
+```
+
+## State Management
+
+This project uses **Provider** for state management.
+
+- `ChangeNotifier`
+- `ChangeNotifierProvider`
+- `Consumer`
+- `notifyListeners()`
+
+Provider manages:
+
+- Shop products
+- User cart
+- Add to cart
+- Remove from cart
+
+##  Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repository.git
+```
+
+### Navigate to the project
+
+```bash
+cd your-repository
+```
+
+### Install dependencies
+
+```bash
+flutter pub get
+```
+
+### Run the application
+
+```bash
+flutter run
+```
+
+## Screenshots
+
+## 📸 Screenshots
+
+| Intro | Shop | Cart |
+|-------|------|------|
+| ![](lib/assets/Intro.jpg) | ![](lib/assets/shop.jpg) | ![](lib/assets/Cart.jpg) |
+```
+
+##  What I Learned
+
+During this project I practiced:
+
+- Flutter Widgets
+- Navigation
+- Drawer
+- ListView.builder
+- Custom Widgets
+- Provider State Management
+- Responsive UI
+- Asset Management
+- Project Structure
+- Shopping Cart Logic
+
+## Future Improvements
+
+- Favorites (Wishlist)
+- Product Details Page
+- Search Functionality
+- Categories
+- Dark Mode
+- Firebase Authentication
+- Payment Integration
+- Order History
+
+## Author
+
+**Ananya Teshome**
+
+GitHub: https://github.com/your-username
+
+---
+ If you like this project, don't forget to give it a star!
