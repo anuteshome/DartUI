@@ -1,9 +1,13 @@
+import 'package:dartui/Models/CartModal.dart';
 import 'package:dartui/Pages/HomePages.dart';
 import 'package:dartui/Pages/introPages.dart';
 import 'package:flutter/material.dart';
+import "package:provider/provider.dart";
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+  create:(context) => Cart(),
+  child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,9 +16,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner:false,
-      home: IntroPage(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: IntroPage());
   }
 }

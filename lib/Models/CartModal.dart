@@ -1,6 +1,8 @@
 import "package:dartui/Models/ShoesModel.dart";
 
-class Cart {
+
+class Cart extends ChangeNotifier {
+
   List<Shoe> ShopShoe = [
     Shoe(
       name: "Running Shoe",
@@ -43,8 +45,11 @@ class Cart {
 
   void AddShoe(Shoe shoe) {
     UserCart.add(shoe);
+    notifyListeners();
   }
-void RemoveShoe(Shoe shoe){
+
+  void RemoveShoe(Shoe shoe) {
     UserCart.remove(shoe);
+    notifyListeners();
   }
 }
