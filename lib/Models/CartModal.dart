@@ -1,8 +1,7 @@
 import "package:dartui/Models/ShoesModel.dart";
-
+import "package:flutter/material.dart";
 
 class Cart extends ChangeNotifier {
-
   List<Shoe> ShopShoe = [
     Shoe(
       name: "Running Shoe",
