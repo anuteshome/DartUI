@@ -58,12 +58,7 @@ class _ShopPageState extends State<ShopPage> {
               itemCount: 4,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                Shoe shoe = Shoe(
-                  name: "Nike Air Max",
-                  Price: "230",
-                  ImagePath: "lib/assets/shors4.png",
-                  Discription: "this is disc",
-                );
+                Shoe shoe = value.getShopShoe()[index];
                 return ShoeTile(shoe: shoe);
               },
             ),
