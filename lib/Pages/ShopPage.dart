@@ -16,7 +16,11 @@ class _ShopPageState extends State<ShopPage> {
     Provider.of<Cart>(context, listen: false).AddShoe(shoe);
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(title: Text("Added to Cart")),
+      builder: (context) => AlertDialog(
+        title: Text("Added to Cart"),
+        content:Text("${shoe.name} has been added to your cart")
+        ),
+
     );
   }
 
